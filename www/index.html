@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+  <script src="components/loader.js"></script>
+  <script src="lib/jquery-3.5.1.min.js"></script>
+  <script src="components/acao.js"></script>
+  <script src="https://kit.fontawesome.com/8d210d7cb2.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col-sm-12">
+       <center><h2>Cadastre um aluno</h2></center>
+       <hr>
+     </div>
+   </div>
+  <div class="row">
+     <div class="col-sm-12" hidden>
+       <label for="code">Codigo:</label>
+       <input type="text" class="form-control" id="code"/>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-sm-12">
+      <b><label for="name">Nome:</label></b>
+       <input type="text" class="form-control" onchange="teste();"  id="name"/>
+     </div>
+   </div>
+      <div class="row">
+     <div class="col-sm-12">
+      <b><label for="email">Email:</label></b>
+       <input type="text" class="form-control" onchange="teste();"  id="email"/>
+     </div>
+   </div>
+      <div class="row">
+     <div class="col-sm-12">
+      <b><label for="password">Senha:</label></b>
+       <input type="password" class="form-control" onchange="teste();"  id="password"/>
+     </div>
+   </div>
+    <div class="row">
+      <div class="col-sm-12">
+       <center><button class="btn btn-danger" id="insert">Cadastrar</button></center>
+       <center><button class="btn btn-danger" id="update">Atualizar</button></center>
+   </div>
+    </div>
+   <hr>
+   <div class="row list">
+     <div class="col-sm-12">
+       <center><h6>Registros</h6></center>
+     </div>
+      <div class="col-sm-12">
+       <ul id="list">
+
+       </ul>
+     </div>
+   </div>
+ </div>
